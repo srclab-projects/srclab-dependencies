@@ -9,12 +9,6 @@
     <version>1.0.0</version>
     <packaging>pom</packaging>
 
-    <developers>
-        <developer>
-            <email>fredsuvn@163.com</email>
-        </developer>
-    </developers>
-
     <properties>
         <main.basedir>${project.basedir}</main.basedir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -113,7 +107,6 @@
         </dependencies>
     </dependencyManagement>
 
-
     <build>
         <plugins>
             <plugin>
@@ -128,7 +121,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>${maven.compiler.plugin.version}</version>
+                <version>${maven.source.plugin.version}</version>
                 <configuration>
                     <attach>true</attach>
                 </configuration>
@@ -154,4 +147,10 @@
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
+
+    <developers>
+        <developer>
+            <email>fredsuvn@163.com</email>
+        </developer>
+    </developers>
 </project>
