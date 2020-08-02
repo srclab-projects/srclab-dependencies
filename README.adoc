@@ -1,0 +1,32 @@
+= SrcLab BOM
+
+BOM of srclab projects
+
+== Getting started
+
+Maven:
+
+[source,xml]
+----
+<dependency>
+    <groupId>xyz.srclab.bom</groupId>
+    <artifactId>srclab-bom</artifactId>
+    <version>1.0.0</version>
+</dependency>
+----
+
+Gradle:
+
+[source,groovy]
+----
+api platform("xyz.srclab.bom:srclab-bom:1.0.0")
+----
+
+== Contact
+
+* QQ group: 1037555759
+
+== License
+
+Apache Dubbo is under the Apache 2.0 license.
+See the https://www.apache.org/licenses/LICENSE-2.0[LICENSE] file for details.
