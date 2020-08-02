@@ -1,4 +1,5 @@
 = SrcLab BOM
+:source-version: 1.0.1
 
 BOM of srclab projects
 
@@ -6,20 +7,20 @@ BOM of srclab projects
 
 Maven:
 
-[source,xml]
+[source,xml,subs="attributes+"]
 ----
 <dependency>
     <groupId>xyz.srclab.bom</groupId>
     <artifactId>srclab-bom</artifactId>
-    <version>1.0.1</version>
+    <version>{source-version}</version>
 </dependency>
 ----
 
 Gradle:
 
-[source,groovy]
+[source,groovy,subs="attributes+"]
 ----
-api platform("xyz.srclab.bom:srclab-bom:1.0.0")
+api platform("xyz.srclab.bom:srclab-bom:{source-version}")
 ----
 
 == Contact
