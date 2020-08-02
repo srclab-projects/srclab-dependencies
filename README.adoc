@@ -29,5 +29,5 @@ api platform("xyz.srclab.bom:srclab-bom:{source-version}")
 
 == License
 
-Apache Dubbo is under the Apache 2.0 license.
+SrcLab BOM is under the Apache 2.0 license.
 See the https://www.apache.org/licenses/LICENSE-2.0[LICENSE] file for details.
