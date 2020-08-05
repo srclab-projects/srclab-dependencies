@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>xyz.srclab.bom</groupId>
+        <artifactId>srclab-bom-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <artifactId>srclab-bom</artifactId>
+    <version>1.0.3</version>
+    <packaging>pom</packaging>
+
+    <name>srclab-bom</name>
+    <description>BOM of srclab projects</description>
+    <url>https://github.com/srclab-projects/srclab-bom</url>
+    <inceptionYear>2020</inceptionYear>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/srclab-projects/srclab-bom</url>
+        <connection>scm:git:https://github.com/srclab-projects/srclab-bom.git</connection>
+        <developerConnection>scm:git:https://github.com/srclab-projects/srclab-bom.git</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>fredsuvn</id>
+            <name>孙谦</name>
+            <email>fredsuvn@163.com</email>
+            <url>https://github.com/fredsuvn</url>
+        </developer>
+        <developer>
+            <id>SrcLab</id>
+            <name>SrcLab Team</name>
+            <organization>SrcLab</organization>
+            <organizationUrl>https://github.com/srclab-projects</organizationUrl>
+        </developer>
+    </developers>
+
+    <properties>
+        <main.basedir>${project.basedir}</main.basedir>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <encoding>UTF-8</encoding>
+
+        <!-- Versions of srclab projects dependencies -->
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Srclab commons -->
+
+            <!-- Srclab spring-boot -->
+
+        </dependencies>
+    </dependencyManagement>
+</project>
