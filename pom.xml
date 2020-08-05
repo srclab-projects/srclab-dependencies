@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>xyz.srclab.bom</groupId>
-    <artifactId>srclab-bom</artifactId>
-    <version>1.0.2</version>
+    <artifactId>srclab-bom-parent</artifactId>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
-    <name>srclab-bom</name>
-    <description>BOM of srclab projects</description>
+    <name>srclab-bom-parent</name>
+    <description>Parent of SrcLab BOM projects</description>
     <url>https://github.com/srclab-projects/srclab-bom</url>
     <inceptionYear>2020</inceptionYear>
 
@@ -53,22 +53,6 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <encoding>UTF-8</encoding>
 
-        <!-- Versions of srclab projects dependencies -->
-
-        <!-- Versions of third dependencies -->
-        <kotlin.version>1.3.72</kotlin.version>
-        <spring.version>2.3.2.RELEASE</spring.version>
-        <jsr305.version>3.0.2</jsr305.version>
-        <cglib.version>3.3.0</cglib.version>
-        <!-- <commons.lang3.version>3.11</commons.lang3.version> -->
-        <commons.collections4.version>4.4</commons.collections4.version>
-        <commons.beanutils.version>1.9.4</commons.beanutils.version>
-        <!-- <commons.codec.version>1.14</commons.codec.version> -->
-        <commons.io.version>2.7</commons.io.version>
-        <guava.version>29.0-jre</guava.version>
-        <!-- <caffeine.version>2.8.5</caffeine.version> -->
-        <testng.version>7.1.0</testng.version>
-
         <!-- Versions of build plugin -->
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
         <maven.source.plugin.version>3.2.1</maven.source.plugin.version>
@@ -76,90 +60,10 @@
         <maven.release.plugin.version>2.5.3</maven.release.plugin.version>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <!-- Srclab projects -->
-
-            <!-- Kotlin -->
-            <dependency>
-                <groupId>org.jetbrains.kotlin</groupId>
-                <artifactId>kotlin-bom</artifactId>
-                <version>${kotlin.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <!-- Spring -->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-parent</artifactId>
-                <version>${spring.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <!-- JSR305 -->
-            <dependency>
-                <groupId>com.google.code.findbugs</groupId>
-                <artifactId>jsr305</artifactId>
-                <version>${jsr305.version}</version>
-            </dependency>
-            <!-- Cglib -->
-            <dependency>
-                <groupId>cglib</groupId>
-                <artifactId>cglib</artifactId>
-                <version>${cglib.version}</version>
-            </dependency>
-            <!-- Apache commons -->
-            <!-- Included by Spring
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>${commons.lang3.version}</version>
-            </dependency>
-            -->
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-collections4</artifactId>
-                <version>${commons.collections4.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-beanutils</groupId>
-                <artifactId>commons-beanutils</artifactId>
-                <version>${commons.beanutils.version}</version>
-            </dependency>
-            <!-- Included by Spring
-            <dependency>
-                <groupId>commons-codec</groupId>
-                <artifactId>commons-codec</artifactId>
-                <version>${commons.codec.version}</version>
-            </dependency>
-            -->
-            <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>${commons.io.version}</version>
-            </dependency>
-            <!-- Guava -->
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>${guava.version}</version>
-            </dependency>
-            <!-- Caffeine -->
-            <!-- Included by Spring
-            <dependency>
-                <groupId>com.github.ben-manes.caffeine</groupId>
-                <artifactId>caffeine</artifactId>
-                <version>${caffeine.version}</version>
-            </dependency>
-            -->
-            <!-- Test -->
-            <dependency>
-                <groupId>org.testng</groupId>
-                <artifactId>testng</artifactId>
-                <version>${testng.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    <modules>
+        <module>srclab-bom</module>
+        <module>srclab-dependencies</module>
+    </modules>
 
     <profiles>
         <profile>

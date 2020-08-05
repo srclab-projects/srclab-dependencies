@@ -1,9 +1,15 @@
 = SrcLab BOM
-:source-version: 1.0.1
+:bom-version: 1.0.3
+:dependencies-version: 1.0.0
 
-BOM of srclab projects
+BOM of srclab projects, including two dependencies management:
+
+* srclab-bom: BOM of srclab projects;
+* srclab-dependencies: BOM of third party dependencies used by srclab projects.
 
 == Getting started
+
+=== srclab-bom
 
 Maven:
 
@@ -12,7 +18,7 @@ Maven:
 <dependency>
     <groupId>xyz.srclab.bom</groupId>
     <artifactId>srclab-bom</artifactId>
-    <version>{source-version}</version>
+    <version>{bom-version}</version>
 </dependency>
 ----
 
@@ -20,7 +26,27 @@ Gradle:
 
 [source,groovy,subs="attributes+"]
 ----
-api platform("xyz.srclab.bom:srclab-bom:{source-version}")
+api platform("xyz.srclab.bom:srclab-bom:{bom-version}")
+----
+
+=== srclab-dependencies
+
+Maven:
+
+[source,xml,subs="attributes+"]
+----
+<dependency>
+    <groupId>xyz.srclab.bom</groupId>
+    <artifactId>srclab-dependencies</artifactId>
+    <version>{dependencies-version}</version>
+</dependency>
+----
+
+Gradle:
+
+[source,groovy,subs="attributes+"]
+----
+api platform("xyz.srclab.bom:srclab-dependencies:{dependencies-version}")
 ----
 
 == Contact
