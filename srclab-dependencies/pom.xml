@@ -7,7 +7,7 @@
     <parent>
         <groupId>xyz.srclab.bom</groupId>
         <artifactId>srclab-bom-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </parent>
     <artifactId>srclab-dependencies</artifactId>
     <version>1.0.1</version>
@@ -43,6 +43,7 @@
         <developer>
             <id>SrcLab</id>
             <name>SrcLab Team</name>
+            <email>srclab@163.com</email>
             <organization>SrcLab</organization>
             <organizationUrl>https://github.com/srclab-projects</organizationUrl>
         </developer>
