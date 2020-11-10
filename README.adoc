@@ -1,11 +1,11 @@
 = SrcLab BOM
 :bom-version: 1.0.3
-:dependencies-version: 1.0.0
+:dependencies-version: 1.0.1
 
-BOM of srclab projects, including two dependencies management:
+BOM of SrcLab projects and third party dependencies, including:
 
-* srclab-bom: BOM of srclab projects;
-* srclab-dependencies: BOM of third party dependencies used by srclab projects.
+* srclab-bom: BOM of SrcLab projects;
+* srclab-dependencies: BOM of third party dependencies (SrcLab projects depend on this).
 
 == Getting started
 
@@ -15,11 +15,17 @@ Maven:
 
 [source,xml,subs="attributes+"]
 ----
-<dependency>
-    <groupId>xyz.srclab.bom</groupId>
-    <artifactId>srclab-bom</artifactId>
-    <version>{bom-version}</version>
-</dependency>
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>xyz.srclab.bom</groupId>
+            <artifactId>srclab-bom</artifactId>
+            <version>{bom-version}</version>
+            <type>pom</type>
+            <scrop>import</scrop>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
 ----
 
 Gradle:
@@ -35,11 +41,17 @@ Maven:
 
 [source,xml,subs="attributes+"]
 ----
-<dependency>
-    <groupId>xyz.srclab.bom</groupId>
-    <artifactId>srclab-dependencies</artifactId>
-    <version>{dependencies-version}</version>
-</dependency>
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>xyz.srclab.bom</groupId>
+            <artifactId>srclab-dependencies</artifactId>
+            <version>{dependencies-version}</version>
+            <type>pom</type>
+            <scrop>import</scrop>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
 ----
 
 Gradle:
@@ -51,9 +63,10 @@ api platform("xyz.srclab.bom:srclab-dependencies:{dependencies-version}")
 
 == Contact
 
+* srclab@163.com
 * QQ group: 1037555759
+* https://github.com/srclab-projects/srclab-bom[GitHub]
 
 == License
 
-SrcLab BOM is under the Apache 2.0 license.
-See the https://www.apache.org/licenses/LICENSE-2.0[LICENSE] file for details.
+https://www.apache.org/licenses/LICENSE-2.0[Apache License 2.0]
