@@ -7,10 +7,10 @@
     <parent>
         <groupId>xyz.srclab.bom</groupId>
         <artifactId>srclab-bom-parent</artifactId>
-        <version>1.0.1</version>
+        <version>1.1.0</version>
     </parent>
     <artifactId>srclab-dependencies</artifactId>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
     <packaging>pom</packaging>
 
     <name>srclab-dependencies</name>
@@ -52,11 +52,11 @@
     <properties>
         <!-- Versions of third dependencies -->
         <!-- Base and meta -->
-        <kotlin.version>1.4.10</kotlin.version>
+        <kotlin.version>1.4.20</kotlin.version>
         <jsr305.version>3.0.2</jsr305.version>
 
         <!-- Spring -->
-        <spring.version>2.3.5.RELEASE</spring.version>
+        <spring.version>2.4.0</spring.version>
 
         <!-- Apache commons -->
         <commons.lang3.version>3.11</commons.lang3.version>
