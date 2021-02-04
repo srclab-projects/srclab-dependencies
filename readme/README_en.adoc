@@ -1,0 +1,72 @@
+= SrcLab BOM
+:bom-version: 1.1.1
+:dependencies-version: 1.1.1
+
+BOM of SrcLab projects and third party dependencies, including:
+
+* srclab-bom: BOM of SrcLab projects;
+* srclab-dependencies: BOM of third party dependencies (SrcLab projects depend on this).
+
+== Using
+
+=== srclab-bom
+
+Gradle:
+
+[source,groovy,subs="attributes+"]
+----
+api platform("xyz.srclab.bom:srclab-bom:{bom-version}")
+----
+
+Maven:
+
+[source,xml,subs="attributes+"]
+----
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>xyz.srclab.bom</groupId>
+            <artifactId>srclab-bom</artifactId>
+            <version>{bom-version}</version>
+            <type>pom</type>
+            <scrop>import</scrop>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+----
+
+=== srclab-dependencies
+
+Gradle:
+
+[source,groovy,subs="attributes+"]
+----
+api platform("xyz.srclab.bom:srclab-dependencies:{dependencies-version}")
+----
+
+Maven:
+
+[source,xml,subs="attributes+"]
+----
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>xyz.srclab.bom</groupId>
+            <artifactId>srclab-dependencies</artifactId>
+            <version>{dependencies-version}</version>
+            <type>pom</type>
+            <scrop>import</scrop>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+----
+
+== Contact
+
+* srclab@163.com
+* QQ group: 1037555759
+* https://github.com/srclab-projects/srclab-bom[GitHub]
+
+== License
+
+https://www.apache.org/licenses/LICENSE-2.0[Apache License 2.0]
