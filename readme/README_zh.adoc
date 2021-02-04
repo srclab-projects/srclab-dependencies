@@ -1,15 +1,22 @@
 = SrcLab BOM
-:bom-version: 1.0.3
-:dependencies-version: 1.0.1
+:bom-version: 1.1.1
+:dependencies-version: 1.1.1
 
-BOM of SrcLab projects and third party dependencies, including:
+用来对SrcLab中的项目及其第三方依赖进行版本管理，包括：
 
-* srclab-bom: BOM of SrcLab projects;
-* srclab-dependencies: BOM of third party dependencies (SrcLab projects depend on this).
+* srclab-bom: SrcLab中的项目的版本管理；
+* srclab-dependencies: SrcLab中的项目的第三方依赖的版本管理。
 
-== Getting started
+== 使用方法
 
 === srclab-bom
+
+Gradle:
+
+[source,groovy,subs="attributes+"]
+----
+api platform("xyz.srclab.bom:srclab-bom:{bom-version}")
+----
 
 Maven:
 
@@ -28,14 +35,14 @@ Maven:
 </dependencyManagement>
 ----
 
+=== srclab-dependencies
+
 Gradle:
 
 [source,groovy,subs="attributes+"]
 ----
-api platform("xyz.srclab.bom:srclab-bom:{bom-version}")
+api platform("xyz.srclab.bom:srclab-dependencies:{dependencies-version}")
 ----
-
-=== srclab-dependencies
 
 Maven:
 
@@ -54,17 +61,10 @@ Maven:
 </dependencyManagement>
 ----
 
-Gradle:
-
-[source,groovy,subs="attributes+"]
-----
-api platform("xyz.srclab.bom:srclab-dependencies:{dependencies-version}")
-----
-
-== Contact
+== 联系我们
 
 * srclab@163.com
-* QQ group: 1037555759
+* QQ群: 1037555759
 * https://github.com/srclab-projects/srclab-bom[GitHub]
 
 == License

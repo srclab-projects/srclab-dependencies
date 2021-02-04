@@ -2,68 +2,68 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>xyz.srclab.bom</groupId>
-        <artifactId>srclab-bom-parent</artifactId>
-        <version>1.1.0</version>
-    </parent>
-    <artifactId>srclab-bom</artifactId>
-    <version>1.1.0</version>
-    <packaging>pom</packaging>
+  <parent>
+    <groupId>xyz.srclab.bom</groupId>
+    <artifactId>srclab-bom-parent</artifactId>
+    <version>1.1.1</version>
+  </parent>
+  <artifactId>srclab-bom</artifactId>
+  <version>1.1.1</version>
+  <packaging>pom</packaging>
 
-    <name>srclab-bom</name>
-    <description>BOM of srclab projects</description>
+  <name>srclab-bom</name>
+  <description>BOM of srclab projects</description>
+  <url>https://github.com/srclab-projects/srclab-bom</url>
+  <inceptionYear>2020</inceptionYear>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+      <comments>A business-friendly OSS license</comments>
+    </license>
+  </licenses>
+
+  <scm>
     <url>https://github.com/srclab-projects/srclab-bom</url>
-    <inceptionYear>2020</inceptionYear>
+    <connection>scm:git:https://github.com/srclab-projects/srclab-bom.git</connection>
+    <developerConnection>scm:git:https://github.com/srclab-projects/srclab-bom.git</developerConnection>
+  </scm>
 
-    <licenses>
-        <license>
-            <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-            <comments>A business-friendly OSS license</comments>
-        </license>
-    </licenses>
+  <developers>
+    <developer>
+      <id>fredsuvn</id>
+      <name>孙谦</name>
+      <email>fredsuvn@163.com</email>
+      <url>https://github.com/fredsuvn</url>
+    </developer>
+    <developer>
+      <id>SrcLab</id>
+      <name>SrcLab Team</name>
+      <email>srclab@163.com</email>
+      <organization>SrcLab</organization>
+      <organizationUrl>https://github.com/srclab-projects</organizationUrl>
+    </developer>
+  </developers>
 
-    <scm>
-        <url>https://github.com/srclab-projects/srclab-bom</url>
-        <connection>scm:git:https://github.com/srclab-projects/srclab-bom.git</connection>
-        <developerConnection>scm:git:https://github.com/srclab-projects/srclab-bom.git</developerConnection>
-    </scm>
+  <properties>
+    <!-- Versions of srclab projects dependencies -->
 
-    <developers>
-        <developer>
-            <id>fredsuvn</id>
-            <name>孙谦</name>
-            <email>fredsuvn@163.com</email>
-            <url>https://github.com/fredsuvn</url>
-        </developer>
-        <developer>
-            <id>SrcLab</id>
-            <name>SrcLab Team</name>
-            <email>srclab@163.com</email>
-            <organization>SrcLab</organization>
-            <organizationUrl>https://github.com/srclab-projects</organizationUrl>
-        </developer>
-    </developers>
+  </properties>
 
-    <properties>
-        <!-- Versions of srclab projects dependencies -->
+  <dependencyManagement>
+    <dependencies>
+      <!-- Prepare for boat here -->
 
-    </properties>
+      <!-- Prepare for boat-spring-boot here -->
 
-    <dependencyManagement>
-        <dependencies>
-            <!-- Prepare for boat here -->
+      <!-- Prepare for ship here -->
 
-            <!-- Prepare for boat-spring-boot here -->
+      <!-- Prepare for lighthouse here -->
 
-            <!-- Prepare for ship here -->
-
-            <!-- Prepare for lighthouse here -->
-
-        </dependencies>
-    </dependencyManagement>
+    </dependencies>
+  </dependencyManagement>
 </project>
