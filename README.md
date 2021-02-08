@@ -1,16 +1,69 @@
-# Title: A description
+# SrcLab BOM: SrcLab BOM (Bill of Materials) Project
+
+## Variables
+
+* bom-version: 1.1.1
+
+## Revision
 
 |Date|Revision|Author|Content|
 |---|---|---|---|
 |2020-11-11|1.0.0|Sun Qian <fredsuvn@163.com>|New|
 |2021-2-5|1.1.1|Sun Qian <fredsuvn@163.com>|Big update|
 
-## Choose your document type and language:
+## Introduction
 
-- Markdown:
-    * [English](readme/README_en.md)
-    * [简体中文](readme/README_zh.md)
+SrcLab BOM is dependencies management for SrcLab projects, including:
 
-- AsciiDoc:
-    * [English](readme/README_en.adoc)
-    * [简体中文](readme/README_zh.adoc)
+* srclab-bom: for SrcLab projects dependencies;
+* srclab-dependencies: for third party dependencies.
+
+## Getting
+
+### Gradle
+
+```groovy
+implementation("xyz.srclab.bom:srclab-bom:{bom-version}")
+```
+
+Or
+
+```groovy
+implementation("xyz.srclab.bom:srclab-dependencies:{bom-version}")
+```
+
+### Maven
+
+```xml
+
+<dependency>
+    <groupId>xyz.srclab.bom</groupId>
+    <artifactId>srclab-bom</artifactId>
+    <version>{bom-version}</version>
+</dependency>
+```
+
+Or
+
+```xml
+
+<dependency>
+    <groupId>xyz.srclab.bom</groupId>
+    <artifactId>srclab-dependencies</artifactId>
+    <version>{bom-version}</version>
+</dependency>
+```
+
+### Source Code
+
+https://github.com/srclab-projects/srclab-bom
+
+## Contribution and Contact
+
+* fredsuvn@163.com
+* https://github.com/srclab-projects/srclab-bom
+* QQ group: 1037555759
+
+## License
+
+[Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html)
