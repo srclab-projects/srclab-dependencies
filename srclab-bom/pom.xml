@@ -51,12 +51,19 @@
 
   <properties>
     <!-- Versions of srclab projects dependencies -->
-
+    <boat.version>0.1.0</boat.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
       <!-- Prepare for boat here -->
+      <dependency>
+        <groupId>xyz.srclab.common</groupId>
+        <artifactId>boat-bom</artifactId>
+        <version>${boat.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
 
       <!-- Prepare for boat-spring-boot here -->
 

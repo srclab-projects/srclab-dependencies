@@ -23,13 +23,13 @@ SrcLab BOM is dependencies management for SrcLab projects, including:
 ### Gradle
 
 ```groovy
-implementation("xyz.srclab.bom:srclab-bom:{bom-version}")
+api platform("xyz.srclab.bom:srclab-bom:{bom-version}")
 ```
 
 Or
 
 ```groovy
-implementation("xyz.srclab.bom:srclab-dependencies:{bom-version}")
+api platform("xyz.srclab.bom:srclab-dependencies:{bom-version}")
 ```
 
 ### Maven
@@ -40,6 +40,8 @@ implementation("xyz.srclab.bom:srclab-dependencies:{bom-version}")
     <groupId>xyz.srclab.bom</groupId>
     <artifactId>srclab-bom</artifactId>
     <version>{bom-version}</version>
+    <type>pom</type>
+    <scope>import</scope>
 </dependency>
 ```
 
@@ -51,6 +53,8 @@ Or
     <groupId>xyz.srclab.bom</groupId>
     <artifactId>srclab-dependencies</artifactId>
     <version>{bom-version}</version>
+    <type>pom</type>
+    <scope>import</scope>
 </dependency>
 ```
 
