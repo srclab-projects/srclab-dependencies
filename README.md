@@ -1,9 +1,5 @@
 # SrcLab BOM: SrcLab BOM (Bill of Materials) Project
 
-## Variables
-
-* bom-version: 1.1.1
-
 ## Revision
 
 |Date|Revision|Author|Content|
@@ -15,10 +11,14 @@
 
 SrcLab BOM is dependencies management for SrcLab projects, including:
 
-* srclab-bom: for SrcLab projects dependencies;
-* srclab-dependencies: for third party dependencies.
+* srclab-bom: SrcLab projects dependencies management;
+* srclab-dependencies: third party dependencies management.
 
 ## Getting
+
+### Variables
+
+* bom-version: 1.1.1
 
 ### Gradle
 

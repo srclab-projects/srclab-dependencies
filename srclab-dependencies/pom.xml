@@ -50,41 +50,47 @@
   </developers>
 
   <properties>
-    <!-- Versions of third dependencies -->
-    <!-- Base and meta -->
+    <!-- Kotlin -->
     <kotlin.version>1.4.30</kotlin.version>
+
+    <!-- Annotations -->
+    <!-- JetBrains annotations -->
+    <jetbrains.annotations.version>20.1.0</jetbrains.annotations.version>
+    <!-- jsr305 -->
     <jsr305.version>3.0.2</jsr305.version>
 
     <!-- Spring -->
-    <spring.version>2.4.2</spring.version>
+    <spring.version>2.4.3</spring.version>
 
+    <!-- Commons -->
     <!-- Apache commons -->
     <commons.lang3.version>3.11</commons.lang3.version>
     <commons.collections4.version>4.4</commons.collections4.version>
     <commons.beanutils.version>1.9.4</commons.beanutils.version>
     <commons.codec.version>1.15</commons.codec.version>
     <commons.io.version>2.8.0</commons.io.version>
-
-    <!-- Google -->
+    <!-- Guava -->
     <guava.version>30.1-jre</guava.version>
 
     <!-- Cache -->
+    <!-- Caffeine -->
     <caffeine.version>2.8.8</caffeine.version>
 
     <!-- Bytecode -->
+    <!-- cglib -->
     <cglib.version>3.3.0</cglib.version>
 
-    <!-- Others -->
-    <!-- Algorithm -->
+    <!-- Cryptos -->
+    <!-- Bouncy Castle Crypto -->
     <bcprov.jdk15on>1.68</bcprov.jdk15on>
 
     <!-- Test -->
+    <!-- TestNG -->
     <testng.version>7.3.0</testng.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
-      <!-- Base and meta -->
       <!-- Kotlin -->
       <dependency>
         <groupId>org.jetbrains.kotlin</groupId>
@@ -92,6 +98,14 @@
         <version>${kotlin.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+
+      <!-- Annotations -->
+      <!-- JetBrains annotations -->
+      <dependency>
+        <groupId>org.jetbrains</groupId>
+        <artifactId>annotations</artifactId>
+        <version>${jetbrains.annotations.version}</version>
       </dependency>
       <!-- JSR305 -->
       <dependency>
@@ -109,6 +123,7 @@
         <scope>import</scope>
       </dependency>
 
+      <!-- Commons -->
       <!-- Apache commons -->
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -135,8 +150,6 @@
         <artifactId>commons-io</artifactId>
         <version>${commons.io.version}</version>
       </dependency>
-
-      <!-- Google -->
       <!-- Guava -->
       <dependency>
         <groupId>com.google.guava</groupId>
@@ -153,15 +166,15 @@
       </dependency>
 
       <!-- Bytecode -->
-      <!-- Cglib -->
+      <!-- cglib -->
       <dependency>
         <groupId>cglib</groupId>
         <artifactId>cglib</artifactId>
         <version>${cglib.version}</version>
       </dependency>
 
-      <!-- Others -->
-      <!-- Algorithm -->
+      <!-- Cryptos -->
+      <!-- Bouncy Castle Crypto -->
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcprov-jdk15on</artifactId>
@@ -169,7 +182,7 @@
       </dependency>
 
       <!-- Test -->
-      <!-- testng -->
+      <!-- TestNG -->
       <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
