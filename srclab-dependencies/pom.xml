@@ -51,7 +51,7 @@
 
   <properties>
     <!-- Kotlin -->
-    <kotlin.version>1.4.30</kotlin.version>
+    <kotlin.version>1.4.31</kotlin.version>
 
     <!-- Annotations -->
     <!-- JetBrains annotations -->
