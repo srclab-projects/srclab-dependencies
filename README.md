@@ -2,14 +2,15 @@
 
 ## Variables
 
+* author: Sun Qian
 * bom-version: 1.1.1
 
 ## Revision
 
 |Date|Revision|Author|Content|
 |---|---|---|---|
-|2020-11-11|1.0.0|Sun Qian <fredsuvn@163.com>|New|
-|2021-2-5|1.1.1|Sun Qian <fredsuvn@163.com>|Big update|
+|2020-11-11|1.0.0|{author}|New|
+|2021-2-5|1.1.1|{author}|Big update|
 
 ## Introduction
 
