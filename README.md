@@ -17,7 +17,7 @@
 SrcLab BOM is dependencies management for SrcLab projects, including:
 
 * srclab-bom: SrcLab projects dependencies management;
-* srclab-dependencies: third party dependencies management.
+* srclab-dependencies: Third party dependencies management.
 
 ## Getting
 
@@ -25,11 +25,6 @@ SrcLab BOM is dependencies management for SrcLab projects, including:
 
 ```groovy
 api platform("xyz.srclab.bom:srclab-bom:{bom-version}")
-```
-
-Or
-
-```groovy
 api platform("xyz.srclab.bom:srclab-dependencies:{bom-version}")
 ```
 
@@ -37,26 +32,22 @@ api platform("xyz.srclab.bom:srclab-dependencies:{bom-version}")
 
 ```xml
 
-<dependency>
-  <groupId>xyz.srclab.bom</groupId>
-  <artifactId>srclab-bom</artifactId>
-  <version>{bom-version}</version>
-  <type>pom</type>
-  <scope>import</scope>
-</dependency>
-```
-
-Or
-
-```xml
-
-<dependency>
-  <groupId>xyz.srclab.bom</groupId>
-  <artifactId>srclab-dependencies</artifactId>
-  <version>{bom-version}</version>
-  <type>pom</type>
-  <scope>import</scope>
-</dependency>
+<dependencies>
+  <dependency>
+    <groupId>xyz.srclab.bom</groupId>
+    <artifactId>srclab-bom</artifactId>
+    <version>{bom-version}</version>
+    <type>pom</type>
+    <scope>import</scope>
+  </dependency>
+  <dependency>
+    <groupId>xyz.srclab.bom</groupId>
+    <artifactId>srclab-dependencies</artifactId>
+    <version>{bom-version}</version>
+    <type>pom</type>
+    <scope>import</scope>
+  </dependency>
+</dependencies>
 ```
 
 ### Source Code
