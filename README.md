@@ -1,5 +1,9 @@
 # SrcLab BOM: SrcLab BOM (Bill of Materials) Project
 
+## Variables
+
+* bom-version: 1.1.1
+
 ## Revision
 
 |Date|Revision|Author|Content|
@@ -15,10 +19,6 @@ SrcLab BOM is dependencies management for SrcLab projects, including:
 * srclab-dependencies: third party dependencies management.
 
 ## Getting
-
-### Variables
-
-* bom-version: 1.1.1
 
 ### Gradle
 
@@ -37,11 +37,11 @@ api platform("xyz.srclab.bom:srclab-dependencies:{bom-version}")
 ```xml
 
 <dependency>
-    <groupId>xyz.srclab.bom</groupId>
-    <artifactId>srclab-bom</artifactId>
-    <version>{bom-version}</version>
-    <type>pom</type>
-    <scope>import</scope>
+  <groupId>xyz.srclab.bom</groupId>
+  <artifactId>srclab-bom</artifactId>
+  <version>{bom-version}</version>
+  <type>pom</type>
+  <scope>import</scope>
 </dependency>
 ```
 
@@ -50,11 +50,11 @@ Or
 ```xml
 
 <dependency>
-    <groupId>xyz.srclab.bom</groupId>
-    <artifactId>srclab-dependencies</artifactId>
-    <version>{bom-version}</version>
-    <type>pom</type>
-    <scope>import</scope>
+  <groupId>xyz.srclab.bom</groupId>
+  <artifactId>srclab-dependencies</artifactId>
+  <version>{bom-version}</version>
+  <type>pom</type>
+  <scope>import</scope>
 </dependency>
 ```
 
@@ -70,4 +70,6 @@ https://github.com/srclab-projects/srclab-bom
 
 ## License
 
-[Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html)
+[Apache 2.0 license][license]
+
+[license]: https://www.apache.org/licenses/LICENSE-2.0.html
