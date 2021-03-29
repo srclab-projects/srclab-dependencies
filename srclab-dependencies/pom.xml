@@ -88,6 +88,13 @@
     <testng.version>7.3.0</testng.version>
     <!-- JMH -->
     <jmh.version>1.29</jmh.version>
+
+    <!-- Netty -->
+    <netty.version>4.1.60.Final</netty.version>
+
+    <!-- gRPC -->
+    <protobuf.version>3.15.6</protobuf.version>
+    <grpc.version>1.36.1</grpc.version>
   </properties>
 
   <dependencyManagement>
@@ -199,6 +206,30 @@
         <groupId>org.openjdk.jmh</groupId>
         <artifactId>jmh-generator-annprocess</artifactId>
         <version>${jmh.version}</version>
+      </dependency>
+
+      <!-- Netty -->
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-all</artifactId>
+        <version>${netty.version}</version>
+      </dependency>
+
+      <!-- gRPC -->
+      <dependency>
+        <groupId>com.google.protobuf</groupId>
+        <artifactId>protobuf-java</artifactId>
+        <version>${protobuf.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.protobuf</groupId>
+        <artifactId>protobuf-java-util</artifactId>
+        <version>${protobuf.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.grpc</groupId>
+        <artifactId>grpc-all</artifactId>
+        <version>${grpc.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
