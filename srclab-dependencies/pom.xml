@@ -7,10 +7,9 @@
   <parent>
     <groupId>xyz.srclab.bom</groupId>
     <artifactId>srclab-bom-parent</artifactId>
-    <version>1.1.1</version>
+    <version>2.0.0</version>
   </parent>
   <artifactId>srclab-dependencies</artifactId>
-  <version>1.1.1</version>
   <packaging>pom</packaging>
 
   <name>srclab-dependencies</name>
@@ -87,6 +86,8 @@
     <!-- Test -->
     <!-- TestNG -->
     <testng.version>7.3.0</testng.version>
+    <!-- JMH -->
+    <jmh.version>1.29</jmh.version>
   </properties>
 
   <dependencyManagement>
@@ -187,6 +188,17 @@
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
         <version>${testng.version}</version>
+      </dependency>
+      <!-- JMH -->
+      <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-core</artifactId>
+        <version>${jmh.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-generator-annprocess</artifactId>
+        <version>${jmh.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
