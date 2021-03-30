@@ -2,21 +2,23 @@
 
 ## Variables
 
-* bom-version: 1.1.1
+* author: Sun Qian
+* bom-version: 2.0.0
 
 ## Revision
 
 |Date|Revision|Author|Content|
 |---|---|---|---|
-|2020-11-11|1.0.0|Sun Qian <fredsuvn@163.com>|New|
-|2021-2-5|1.1.1|Sun Qian <fredsuvn@163.com>|Big update|
+|2020-11-11|1.0.0|{author}|New|
+|2021-2-5|1.1.1|{author}|Big update|
+|2021-3-30|2.0.0|{author}|Big update|
 
 ## Introduction
 
 SrcLab BOM is dependencies management for SrcLab projects, including:
 
-* srclab-bom: for SrcLab projects dependencies;
-* srclab-dependencies: for third party dependencies.
+* srclab-bom: SrcLab projects dependencies management;
+* srclab-dependencies: Third party dependencies management.
 
 ## Getting
 
@@ -24,11 +26,6 @@ SrcLab BOM is dependencies management for SrcLab projects, including:
 
 ```groovy
 api platform("xyz.srclab.bom:srclab-bom:{bom-version}")
-```
-
-Or
-
-```groovy
 api platform("xyz.srclab.bom:srclab-dependencies:{bom-version}")
 ```
 
@@ -36,26 +33,22 @@ api platform("xyz.srclab.bom:srclab-dependencies:{bom-version}")
 
 ```xml
 
-<dependency>
+<dependencies>
+  <dependency>
     <groupId>xyz.srclab.bom</groupId>
     <artifactId>srclab-bom</artifactId>
     <version>{bom-version}</version>
     <type>pom</type>
     <scope>import</scope>
-</dependency>
-```
-
-Or
-
-```xml
-
-<dependency>
+  </dependency>
+  <dependency>
     <groupId>xyz.srclab.bom</groupId>
     <artifactId>srclab-dependencies</artifactId>
     <version>{bom-version}</version>
     <type>pom</type>
     <scope>import</scope>
-</dependency>
+  </dependency>
+</dependencies>
 ```
 
 ### Source Code
@@ -70,4 +63,6 @@ https://github.com/srclab-projects/srclab-bom
 
 ## License
 
-[Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html)
+[Apache 2.0 license][license]
+
+[license]: https://www.apache.org/licenses/LICENSE-2.0.html

@@ -7,10 +7,9 @@
   <parent>
     <groupId>xyz.srclab.bom</groupId>
     <artifactId>srclab-bom-parent</artifactId>
-    <version>1.1.1</version>
+    <version>2.0.0</version>
   </parent>
   <artifactId>srclab-bom</artifactId>
-  <version>1.1.1</version>
   <packaging>pom</packaging>
 
   <name>srclab-bom</name>
@@ -50,27 +49,10 @@
   </developers>
 
   <properties>
-    <!-- Versions of srclab projects dependencies -->
-    <boat.version>0.1.0</boat.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
-      <!-- Prepare for boat here -->
-      <dependency>
-        <groupId>xyz.srclab.common</groupId>
-        <artifactId>boat-bom</artifactId>
-        <version>${boat.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
-      <!-- Prepare for boat-spring-boot here -->
-
-      <!-- Prepare for ship here -->
-
-      <!-- Prepare for lighthouse here -->
-
     </dependencies>
   </dependencyManagement>
 </project>
