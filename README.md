@@ -3,7 +3,7 @@
 ## Variables
 
 * author: Sun Qian
-* bom-version: 1.1.1
+* bom-version: 2.0.0
 
 ## Revision
 
@@ -11,6 +11,7 @@
 |---|---|---|---|
 |2020-11-11|1.0.0|{author}|New|
 |2021-2-5|1.1.1|{author}|Big update|
+|2021-3-30|2.0.0|{author}|Big update|
 
 ## Introduction
 
