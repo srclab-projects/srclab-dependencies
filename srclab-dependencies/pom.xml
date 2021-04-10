@@ -81,7 +81,9 @@
 
     <!-- Cryptos -->
     <!-- Bouncy Castle Crypto -->
-    <bcprov.jdk15on>1.68</bcprov.jdk15on>
+    <bcprov.jdk15on.version>1.68</bcprov.jdk15on.version>
+    <!-- Java JWT -->
+    <java.jwt.version>3.15.0</java.jwt.version>
 
     <!-- Test -->
     <!-- TestNG -->
@@ -187,7 +189,13 @@
       <dependency>
         <groupId>org.bouncycastle</groupId>
         <artifactId>bcprov-jdk15on</artifactId>
-        <version>1.68</version>
+        <version>${bcprov.jdk15on.version}</version>
+      </dependency>
+      <!-- Java JWT -->
+      <dependency>
+        <groupId>com.auth0</groupId>
+        <artifactId>java-jwt</artifactId>
+        <version>${java.jwt.version}</version>
       </dependency>
 
       <!-- Test -->
