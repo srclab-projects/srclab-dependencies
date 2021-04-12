@@ -5,14 +5,6 @@
 * author: Sun Qian
 * bom-version: 2.0.0
 
-## Revision
-
-|Date|Revision|Author|Content|
-|---|---|---|---|
-|2020-11-11|1.0.0|{author}|New|
-|2021-2-5|1.1.1|{author}|Big update|
-|2021-3-30|2.0.0|{author}|Big update|
-
 ## Introduction
 
 SrcLab BOM is dependencies management for SrcLab projects, including:
