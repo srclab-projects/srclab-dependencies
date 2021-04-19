@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>xyz.srclab.bom</groupId>
-  <artifactId>srclab-bom-parent</artifactId>
-  <version>2.0.0</version>
+  <groupId>xyz.srclab.dependencies</groupId>
+  <artifactId>dependencies</artifactId>
+  <version>0.0.0</version>
   <packaging>pom</packaging>
 
-  <name>srclab-bom-parent</name>
-  <description>Parent of SrcLab BOM projects</description>
-  <url>https://github.com/srclab-projects/srclab-bom</url>
+  <name>dependencies</name>
+  <description>Dependencies Management for SrcLab</description>
+  <url>https://github.com/srclab-projects/dependencies</url>
   <inceptionYear>2020</inceptionYear>
 
   <licenses>
@@ -24,9 +24,9 @@
   </licenses>
 
   <scm>
-    <url>https://github.com/srclab-projects/srclab-bom</url>
-    <connection>scm:git:https://github.com/srclab-projects/srclab-bom.git</connection>
-    <developerConnection>scm:git:https://github.com/srclab-projects/srclab-bom.git</developerConnection>
+    <url>https://github.com/srclab-projects/dependencies</url>
+    <connection>scm:git:https://github.com/srclab-projects/dependencies.git</connection>
+    <developerConnection>scm:git:https://github.com/srclab-projects/dependencies.git</developerConnection>
   </scm>
 
   <developers>
@@ -59,12 +59,197 @@
     <maven.source.plugin.version>3.2.1</maven.source.plugin.version>
     <maven.gpg.plugin.version>1.6</maven.gpg.plugin.version>
     <maven.release.plugin.version>2.5.3</maven.release.plugin.version>
+
+    <!-- Version of third party projects -->
+    <!-- Kotlin -->
+    <kotlin.version>1.4.31</kotlin.version>
+    <!-- Annotations -->
+    <!-- JetBrains annotations -->
+    <jetbrains.annotations.version>20.1.0</jetbrains.annotations.version>
+    <!-- jsr305 -->
+    <jsr305.version>3.0.2</jsr305.version>
+    <!-- Spring -->
+    <spring.version>2.4.3</spring.version>
+    <!-- Commons -->
+    <!-- Apache commons -->
+    <commons.lang3.version>3.11</commons.lang3.version>
+    <commons.collections4.version>4.4</commons.collections4.version>
+    <commons.beanutils.version>1.9.4</commons.beanutils.version>
+    <commons.codec.version>1.15</commons.codec.version>
+    <commons.io.version>2.8.0</commons.io.version>
+    <!-- Guava -->
+    <guava.version>30.1-jre</guava.version>
+    <!-- Cache -->
+    <!-- Caffeine -->
+    <caffeine.version>2.8.8</caffeine.version>
+    <!-- Bytecode -->
+    <!-- cglib -->
+    <cglib.version>3.3.0</cglib.version>
+    <!-- Cryptos -->
+    <!-- Bouncy Castle Crypto -->
+    <bcprov.jdk15on.version>1.68</bcprov.jdk15on.version>
+    <!-- Java JWT -->
+    <java.jwt.version>3.15.0</java.jwt.version>
+    <!-- Test -->
+    <!-- TestNG -->
+    <testng.version>7.3.0</testng.version>
+    <!-- JMH -->
+    <jmh.version>1.29</jmh.version>
+    <!-- Netty -->
+    <netty.version>4.1.60.Final</netty.version>
+    <!-- gRPC -->
+    <protobuf.version>3.15.6</protobuf.version>
+    <grpc.version>1.36.1</grpc.version>
+    <jackson.datatype.protobuf.version>0.9.12</jackson.datatype.protobuf.version>
   </properties>
 
-  <modules>
-    <module>srclab-bom</module>
-    <module>srclab-dependencies</module>
-  </modules>
+  <dependencyManagement>
+    <dependencies>
+      <!-- Kotlin -->
+      <dependency>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-bom</artifactId>
+        <version>${kotlin.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <!-- Annotations -->
+      <!-- JetBrains annotations -->
+      <dependency>
+        <groupId>org.jetbrains</groupId>
+        <artifactId>annotations</artifactId>
+        <version>${jetbrains.annotations.version}</version>
+      </dependency>
+      <!-- JSR305 -->
+      <dependency>
+        <groupId>com.google.code.findbugs</groupId>
+        <artifactId>jsr305</artifactId>
+        <version>${jsr305.version}</version>
+      </dependency>
+
+      <!-- Spring -->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>${spring.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <!-- Commons -->
+      <!-- Apache commons -->
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commons.lang3.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>${commons.collections4.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-beanutils</groupId>
+        <artifactId>commons-beanutils</artifactId>
+        <version>${commons.beanutils.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>${commons.codec.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>${commons.io.version}</version>
+      </dependency>
+      <!-- Guava -->
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava.version}</version>
+      </dependency>
+
+      <!-- Cache -->
+      <!-- Caffeine -->
+      <dependency>
+        <groupId>com.github.ben-manes.caffeine</groupId>
+        <artifactId>caffeine</artifactId>
+        <version>${caffeine.version}</version>
+      </dependency>
+
+      <!-- Bytecode -->
+      <!-- cglib -->
+      <dependency>
+        <groupId>cglib</groupId>
+        <artifactId>cglib</artifactId>
+        <version>${cglib.version}</version>
+      </dependency>
+
+      <!-- Cryptos -->
+      <!-- Bouncy Castle Crypto -->
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcprov-jdk15on</artifactId>
+        <version>${bcprov.jdk15on.version}</version>
+      </dependency>
+      <!-- Java JWT -->
+      <dependency>
+        <groupId>com.auth0</groupId>
+        <artifactId>java-jwt</artifactId>
+        <version>${java.jwt.version}</version>
+      </dependency>
+
+      <!-- Test -->
+      <!-- TestNG -->
+      <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>${testng.version}</version>
+      </dependency>
+      <!-- JMH -->
+      <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-core</artifactId>
+        <version>${jmh.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-generator-annprocess</artifactId>
+        <version>${jmh.version}</version>
+      </dependency>
+
+      <!-- Netty -->
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-all</artifactId>
+        <version>${netty.version}</version>
+      </dependency>
+
+      <!-- gRPC -->
+      <dependency>
+        <groupId>com.google.protobuf</groupId>
+        <artifactId>protobuf-java</artifactId>
+        <version>${protobuf.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.protobuf</groupId>
+        <artifactId>protobuf-java-util</artifactId>
+        <version>${protobuf.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.grpc</groupId>
+        <artifactId>grpc-all</artifactId>
+        <version>${grpc.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.hubspot.jackson</groupId>
+        <artifactId>jackson-datatype-protobuf</artifactId>
+        <version>${jackson.datatype.protobuf.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <profiles>
     <profile>
