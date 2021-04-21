@@ -5,13 +5,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>xyz.srclab.dependencies</groupId>
-  <artifactId>dependencies</artifactId>
+  <artifactId>srclab-dependencies</artifactId>
   <version>0.0.0</version>
   <packaging>pom</packaging>
 
   <name>dependencies</name>
   <description>Dependencies Management for SrcLab</description>
-  <url>https://github.com/srclab-projects/dependencies</url>
+  <url>https://github.com/srclab-projects/srclab-dependencies</url>
   <inceptionYear>2020</inceptionYear>
 
   <licenses>
@@ -24,9 +24,9 @@
   </licenses>
 
   <scm>
-    <url>https://github.com/srclab-projects/dependencies</url>
-    <connection>scm:git:https://github.com/srclab-projects/dependencies.git</connection>
-    <developerConnection>scm:git:https://github.com/srclab-projects/dependencies.git</developerConnection>
+    <url>https://github.com/srclab-projects/srclab-dependencies</url>
+    <connection>scm:git:https://github.com/srclab-projects/srclab-dependencies.git</connection>
+    <developerConnection>scm:git:https://github.com/srclab-projects/srclab-dependencies.git</developerConnection>
   </scm>
 
   <developers>
