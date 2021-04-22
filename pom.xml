@@ -9,7 +9,7 @@
   <version>0.0.0</version>
   <packaging>pom</packaging>
 
-  <name>dependencies</name>
+  <name>SrcLab Dependencies</name>
   <description>Dependencies Management for SrcLab</description>
   <url>https://github.com/srclab-projects/srclab-dependencies</url>
   <inceptionYear>2020</inceptionYear>
