@@ -81,7 +81,7 @@
     <guava.version>30.1.1-jre</guava.version>
     <!-- Cache -->
     <!-- Caffeine -->
-    <caffeine.version>3.0.2</caffeine.version>
+    <caffeine.version>2.9.1</caffeine.version>
     <!-- Bytecode -->
     <!-- cglib -->
     <cglib.version>3.3.0</cglib.version>
