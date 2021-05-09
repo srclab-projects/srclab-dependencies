@@ -5,7 +5,8 @@
 
 ## Introduction
 
-`srclab-dependencies` is dependencies management for SrcLab projects, also can be used in other projects.
+`srclab-dependencies` is a dependency management for SrcLab projects, provides version management for common third party
+libs, as the role of `dependencyManagement`.
 
 ## Getting
 
