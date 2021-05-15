@@ -13,7 +13,7 @@ libs, as the role of `dependencyManagement`.
 ### Gradle
 
 ```groovy
-api platform("xyz.srclab.dependencies:srclab-dependencies:0.0.0")
+api platform("xyz.srclab.dependencies:srclab-dependencies:0.0.1")
 ```
 
 ### Maven
@@ -24,7 +24,7 @@ api platform("xyz.srclab.dependencies:srclab-dependencies:0.0.0")
   <dependency>
     <groupId>xyz.srclab.dependencies</groupId>
     <artifactId>srclab-dependencies</artifactId>
-    <version>0.0.0</version>
+    <version>0.0.1</version>
     <type>pom</type>
     <scope>import</scope>
   </dependency>
