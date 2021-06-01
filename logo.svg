@@ -1,0 +1,56 @@
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <title>SrcLab Dependencies</title>
+  <g id="group-background">
+    <path id="background"
+          d="M60,60 m-60,-60 l120,0 l0,120 l-120,0 l0,-120 z"
+          fill="#3f3f3f"
+    />
+  </g>
+  <g id="group-hive"
+     fill="#fefefe" stroke="#3f3f3f" stroke-width="2"
+     stroke-linecap="square" stroke-miterlimit="100"
+     filter="url(#light-shadow)"
+  >
+    <path id="hive-top"
+          d="M60,60 m-10,-51 l20,0 l10,17 l-10,17 l-20,0 l-10,-17 l10,-17"
+    />
+    <path id="hive-right-top"
+          d="M60,60 m20,-34 l20,0 l10,17 l-10,17 l-20,0 l-10,-17 l10,-17"
+    />
+    <path id="hive-right-bottom"
+          d="M60,60 m20,0 l20,0 l10,17 l-10,17 l-20,0 l-10,-17 l10,-17"
+    />
+    <path id="hive-bottom"
+          d="M60,60 m-10,17 l20,0 l10,17 l-10,17 l-20,0 l-10,-17 l10,-17"
+    />
+    <path id="hive-left-bottom"
+          d="M60,60 m-40,0 l20,0 l10,17 l-10,17 l-20,0 l-10,-17 l10,-17"
+    />
+    <path id="hive-left-top"
+          d="M60,60 m-40,-34 l20,0 l10,17 l-10,17 l-20,0 l-10,-17 l10,-17"
+    />
+  </g>
+  <g id="group-title"
+     text-anchor="middle" font-family="Inter,Arial,sans-serif"
+     font-size="14" font-style="italic" fill="DarkOrange"
+  >
+    <text id="text-srclab" x="60" y="57">
+      SrcLab
+    </text>
+    <text id="text-srclab" x="60" y="72">
+      Dependencies
+    </text>
+  </g>
+  <defs>
+    <filter id="light-shadow">
+      <feColorMatrix result="colorOut" in="SourceGraphic"
+                     values="1 0 0 0 0
+                             0 0.84314 0 0 0
+                             0 0 0 0 0
+                             0 0 0 1 0"
+      />
+      <feGaussianBlur result="blurOut" in="colorOut" stdDeviation="4"/>
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+    </filter>
+  </defs>
+</svg>
