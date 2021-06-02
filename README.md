@@ -35,10 +35,10 @@ api platform("xyz.srclab.dependencies:srclab-dependencies:0.0.1")
 
 [Source]
 
-## Contribution and Contact
+## Join
 
 * fredsuvn@163.com
-* https://github.com/srclab-projects/srclab-dependencies
+* [Source]
 * QQ group: 1037555759
 
 ## License
