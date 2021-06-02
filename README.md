@@ -38,7 +38,7 @@ api platform("xyz.srclab.dependencies:srclab-dependencies:0.0.1")
 ## Contribution and Contact
 
 * fredsuvn@163.com
-* https://github.com/srclab-projects/srclab-dependencies
+* [Source]
 * QQ group: 1037555759
 
 ## License
