@@ -35,7 +35,7 @@ api platform("xyz.srclab.dependencies:srclab-dependencies:0.0.1")
 
 [Source]
 
-## Contribution and Contact
+## Join
 
 * fredsuvn@163.com
 * [Source]
