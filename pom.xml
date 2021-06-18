@@ -101,6 +101,8 @@
     <protobuf.version>3.17.0</protobuf.version>
     <grpc.version>1.37.1</grpc.version>
     <jackson.datatype.protobuf.version>0.9.12</jackson.datatype.protobuf.version>
+    <!-- Velocity -->
+    <velocity.version>1.7</velocity.version>
   </properties>
 
   <dependencyManagement>
@@ -247,6 +249,13 @@
         <groupId>com.hubspot.jackson</groupId>
         <artifactId>jackson-datatype-protobuf</artifactId>
         <version>${jackson.datatype.protobuf.version}</version>
+      </dependency>
+
+      <!-- Velocity -->
+      <dependency>
+        <groupId>org.apache.velocity</groupId>
+        <artifactId>velocity</artifactId>
+        <version>${velocity.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
