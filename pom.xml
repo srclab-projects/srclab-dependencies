@@ -103,6 +103,8 @@
     <jackson.datatype.protobuf.version>0.9.12</jackson.datatype.protobuf.version>
     <!-- Velocity -->
     <velocity.version>1.7</velocity.version>
+    <!-- H2 Database -->
+    <h2database.version>1.4.200</h2database.version>
   </properties>
 
   <dependencyManagement>
@@ -256,6 +258,13 @@
         <groupId>org.apache.velocity</groupId>
         <artifactId>velocity</artifactId>
         <version>${velocity.version}</version>
+      </dependency>
+
+      <!-- H2 Database -->
+      <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <version>${h2database.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
